@@ -19,7 +19,7 @@ show_armor: The show_armor method prints the current armor attribute of the warr
 Knight, Mage, and Tank Classes
 These classes inherit from the Warrior class and have a specialized reduce_health_fight method that reduces the health attribute of the warrior character based on their armor attribute.
 Main Code
-A Knight object is created with initial attributes (name='Warrior', health=100, armor=10).
+A Knight object is created with initial attributes (health=100, armor=10).
 A for loop is used to simulate 10 moves for the warrior character. In each iteration, the move method is called and then a random choice is made from the action_type list.
 If the choice is 0, the warrior character fights with one of four creatures based on its current position. If the warrior character defeats the creature, its armor and health attributes are updated based on the reduce_health_fight method of the corresponding specialized class. If the warrior character's health attribute falls below 0, the game is over.
 If the choice is 1, the warrior character finds an item that increases its health attribute by a random magnitude from the increase_decrease list. The new health attribute is then printed.
